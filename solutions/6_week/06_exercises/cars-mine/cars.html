@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="cars.css">
+   <title>Car Database</title>
+</head>
+<body>
+
+   <div class="searchSection">
+      <h2>Find Car Information</h2>
+
+      <div>
+         <label for="searchBy">Search</label>
+         <input type="text" name="searchBy" id="searchBy">
+
+         <div><button type="sumit" id="searchBtn">Search</button></div>
+         
+      </div>
+   </div>
+
+
+
+
+   <div class="form-container">
+      <h2>Car Information</h2>
+      <p><i>*All input fields required</i></p>
+   
+      <form id="inputForm">
+
+         <div>
+         <label for="license">License Plate</label>
+         <input type="text" name="license" id="license" required>
+         </div>
+
+         <div>
+         <label for="maker">Maker</label>
+         <input type="text" name="license-plate" id="maker" required>  
+         </div>
+
+         <div>
+            <label for="model">Model</label>
+            <input type="text" name="model" id="model" required>
+            </div> 
+         
+         <div>
+         <label for="year">Manufacture Year</label>
+         <input type="number" name="year" id="year" min="1886" max="2024" required>
+         </div> 
+
+         <div>
+         <label for="owner">Owner</label>
+         <input type="text" name="owner" id="owner" required> 
+         </div>
+
+         <div>
+         <label for="price">Price</label>
+         <input type="number" name="price" id="price" required> 
+         </div>
+
+
+         <div>
+         <label for="color">Colour</label>
+         <input type="text" name="color" id="color">
+         </div>
+
+         <div><button type="submit" id="submitButton">Submit</button></div>
+
+      </form>
+
+
+      <!--Table making-->
+      <table id="display">
+         <tr>
+            <th>License</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Year of Make</th>
+            <th>Owner</th>
+            <th>Price</th>
+            <th>Color</th>
+         </tr> 
+      </table>
+
+   </div>
+   
+
+   <script src="cars.js"></script>
+
+</body>
+</html>
